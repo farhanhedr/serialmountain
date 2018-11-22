@@ -1,5 +1,9 @@
 FROM openjdk:8-jdk-alpine
 RUN ["mkdir", "/app"]
+
+RUN ["ls", "-lah"]
+RUN ["pwd"]
+
 #VOLUME /app
 WORKDIR /app
 ARG DEPENDENCY=target/dependency
